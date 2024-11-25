@@ -41,6 +41,17 @@ class Board():
         self.BS = Sink('B', pieces["BS"])
         self.B1.next = self.BS
         self.BS.next = self.A6
+        
+    @staticmethod
+    def view_nodes():
+        """
+        Prints a representation of the mancala board with the node names.
+        """
+        print("---------------------------")
+        print("|    B1 B2 B3 B4 B5 B6    |")
+        print("| BS                   AS |")
+        print("|    A6 A5 A4 A3 A2 A1    |")
+        print("---------------------------")
 
 class Node(ABC):
 
